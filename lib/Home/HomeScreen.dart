@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:my_flutter_cocktail_app/Home/rocket_details_screen.dart';
 import 'package:my_flutter_cocktail_app/Home/rocket_list_tile.dart';
 import 'package:my_flutter_cocktail_app/NetworkRepository/backend.dart';
+import 'package:my_flutter_cocktail_app/utils/Constraints.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -191,12 +192,21 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.add_to_home_screen),
+              leading: Icon(Icons.smart_button_sharp),
               title: Text("Buttom Tab bar"),
               onTap: () {
                 setState(() {
                   isBottom=true;
                 });
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.logout),
+              title: Text("Logout"),
+              onTap: () {
+                Constraints.preferences.setBool("login", false);
+                Navigator.of(context).pushNamed("/login");
                 Navigator.pop(context);
               },
             )
