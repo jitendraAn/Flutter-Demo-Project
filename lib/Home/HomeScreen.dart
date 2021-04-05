@@ -206,8 +206,8 @@ class _HomeScreenState extends State<HomeScreen> {
               title: Text("Logout"),
               onTap: () {
                 Constraints.preferences.setBool("login", false);
-                Navigator.of(context).pushNamed("/login");
                 Navigator.pop(context);
+                Navigator.of(context).pushNamed("/Login");
               },
             )
           ],
