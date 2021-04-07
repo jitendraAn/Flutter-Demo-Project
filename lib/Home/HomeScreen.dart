@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:my_flutter_cocktail_app/Home/rocket_details_screen.dart';
 import 'package:my_flutter_cocktail_app/Home/rocket_list_tile.dart';
 import 'package:my_flutter_cocktail_app/NetworkRepository/backend.dart';
+import 'package:my_flutter_cocktail_app/seach/Search.dart';
 import 'package:my_flutter_cocktail_app/utils/Constraints.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -126,6 +127,22 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home"),
+        elevation: 0.0,
+        actions: <Widget>[
+          // TODO: Add shortcut to login screen from trailing icons (104)
+          IconButton(
+            icon: Icon(
+              Icons.search,
+              semanticLabel: 'search',
+            ),
+            onPressed: () {
+              // TODO: Add open login (104)
+              showSearch(context: context, delegate: DataSearch());
+            },
+          ),
+
+        ],
+
       ),
       body: isBottom? Center(
           child: _widgetOptions.elementAt(_selectedIndex))
