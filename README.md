@@ -30,8 +30,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Flutter Interview Questions
 1. What is the difference between a StatelessWidget and a StatefulWidget in Flutter?
-Ans- 
 
+Ans- 
 Stateless Widget:
 Stateless Widgets are static widgets.
 They do not depend on any data change or any behavior change.
@@ -43,3 +43,7 @@ Stateful Widgets are dynamic widgets.
 They can be updated during runtime based on user action or data change.
 Stateful Widgets have an internal state and can re-render if the input data changes or if Widget’s state changes.
 For Example: Checkbox, Radio Button, Slider are Stateful Widgets
+
+2.Explain the Stateful Widget Lifecycle?
+
+Ans- https://flutterbyexample.com/lesson/stateful-widget-lifecycle
