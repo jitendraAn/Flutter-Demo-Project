@@ -28,37 +28,37 @@ samples, guidance on mobile development, and a full API reference.
 ![Screenshot_1617628163](https://user-images.githubusercontent.com/31131116/113578140-f441ef80-963f-11eb-864f-4eb462fc5abe.png)
 ![Screenshot_1617628166](https://user-images.githubusercontent.com/31131116/113578142-f441ef80-963f-11eb-8d89-582990d2978d.png)
 
-## Flutter Interview Questions
+# Flutter Interview Questions
 
 
-# 1. What is the difference between a StatelessWidget and a StatefulWidget in Flutter?
+### 1. What is the difference between a StatelessWidget and a StatefulWidget in Flutter?
 
 Ans- 
-# Stateless Widget:
+## Stateless Widget:
 Stateless Widgets are static widgets.
 They do not depend on any data change or any behavior change.
 Stateless Widgets do not have a state, they will be rendered once and will not update themselves, but will only be updated when external data changes.
 For Example: Text, Icon, RaisedButton are Stateless Widgets. 
  
-# Stateful Widget:
+## Stateful Widget:
 Stateful Widgets are dynamic widgets.
 They can be updated during runtime based on user action or data change.
 Stateful Widgets have an internal state and can re-render if the input data changes or if Widget’s state changes.
 For Example: Checkbox, Radio Button, Slider are Stateful Widgets
 
-# 2. Explain the Stateful Widget Lifecycle?
+### 2. Explain the Stateful Widget Lifecycle?
 
 Ans- https://flutterbyexample.com/lesson/stateful-widget-lifecycle
 
-# 3. When do you use the WidgetsBindingObserver?
+### 3. When do you use the WidgetsBindingObserver?
 
 Ans- https://medium.com/@marcoleong.developer/lifecycle-in-flutter-widgetsbindingobserver-2eb782236f8b#:~:text=These%20protocol%20are%20the%20keys,should%20get%20something%20like%20this.&text=case%20AppLifecycleState.
 
-# 4. What is the difference between hot restart and hot reload?
+### 4. What is the difference between hot restart and hot reload?
 
 Ans- https://www.geeksforgeeks.org/difference-between-hot-reload-and-hot-restart-in-flutter/
 
-# 5. What is an InheritedWidget? List some examples.
+### 5. What is an InheritedWidget? List some examples.
 
 Ans- https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html
 
